@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,300;0,400;0,500;0,700;0,900;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    background-image: url('../images/bg.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+.signup{
+    border-radius: 10px;
+    width: 1080px;
+    min-width: 350px;
+    background-color: rgba(245, 247, 255, 0.85);
+    padding: 60px;
+    display: flex;
+    align-items: center;
+}
+.signup .image{
+    width: 450px;
+    height: 536px;
+    margin-right: 60px;
+}
+.signup .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.signup .register h2{
+    font-family: 'Mulish', sans-serif;
+    font-size: 42px;
+    line-height: 50.4px;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+.signup .register p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    line-height: 38.4px;
+    margin: 0 0 40px 0;
+}
+.signup .register .username,
+.signup .register .email,
+.signup .register .pass
+{
+    position: relative;
+    width: 100%;
+}
+.signup .register .username input,
+.signup .register .email input,
+.signup .register .pass input
+{
+    width: 100%;
+    height: 100%;
+    padding: 10px 0 10px 50px;
+    margin-bottom: 10px;
+}
+.signup .register .username svg,
+.signup .register .email svg,
+.signup .register .pass svg{
+    position:absolute;
+    top: 50%;
+    left: 15px;
+    color: #9CADF2;
+    transform: translatey(-50%);
+    border-right: 1px solid #DBE3FF;
+    padding-right: 10px;
+}
+
+.signup .register button{
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right,#2663DF, #758FF0);;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    margin-top: 10px;
+}
+
+.signup .register #usernameError,
+.signup .register #emailError,
+.signup .register #passError,
+.signup .register #passConfirmError{
+    text-align: left;
+    font-size: 12px;
+}
+@media (max-width: 1199.98px) {
+    .home .info p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 991.98px) { 
+    body{
+        display: block;
+        padding: 40px 0;
+    }
+    .signup{
+        margin: auto;
+        width: 375px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 30px;
+    }
+    .signup .image{
+        width: 100%;
+        height: 315px;
+        margin: 0 0 40px 0;
+    }
+    .signup .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .signup .register{
+        text-align: center;
+    }
+    .signup .register h2{
+        font-size: 32px;
+        line-height: 38.4px;
+    }
+    .signup .register p{
+        font-size: 16px;
+        line-height: 25.6px;
+    }
+} 
+

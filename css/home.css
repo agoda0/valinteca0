@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,300;0,400;0,500;0,700;0,900;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    background-image: url('../images/bg.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home{
+    border-radius: 10px;
+    width: 1080px;
+    min-width: 350px;
+    height: 435px;
+    background-color: rgba(245, 247, 255, 0.85);
+    padding: 60px;
+    display: flex;
+    align-items: center;
+}
+.home .image{
+    width: 450px;
+    height: 315px;
+    margin-right: 60px;
+}
+.home .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.home .info h2{
+    font-family: 'Mulish', sans-serif;
+    font-size: 56px;
+    line-height: 67.2px;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+.home .info p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    line-height: 38.4px;
+    margin: 0 0 40px 0;
+}
+.home .info button{
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right,#2663DF, #758FF0);;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+}
+
+@media (max-width: 1199.98px) {
+    .home .info p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    body{
+        display: block;
+        padding: 40px 0;
+    }
+    .home{
+        margin: auto;
+        width: 375px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 30px;
+    }
+    .home .image{
+        width: 100%;
+        height: 315px;
+        margin: 0 0 40px 0;
+    }
+    .home .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .home .info{
+        text-align: center;
+    }
+    .home .info p{
+        font-size: 24px;
+    }
+}

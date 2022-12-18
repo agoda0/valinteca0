@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,300;0,400;0,500;0,700;0,900;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    background-image: url('../images/bg.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.success{
+    border-radius: 10px;
+    width: 1080px;
+    min-width: 350px;
+    height: 576px;
+    background-color: rgba(245, 247, 255, 0.85);
+    padding: 60px;
+    display: flex;
+    align-items: center;
+}
+.success .image{
+    width: 450px;
+    height: 456px;
+    margin-right: 60px;
+}
+.success .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.success .info h2{
+    font-family: 'Mulish', sans-serif;
+    font-size: 42px;
+    line-height: 50.4px;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+.success .info p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+@media (max-width: 991.98px) { 
+    body{
+        display: block;
+        padding: 40px 0;
+    }
+    .success{
+        margin: auto;
+        width: 375px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 30px;
+    }
+    .success .image{
+        width: 100%;
+        height: 315px;
+        margin: 0 0 140px 0;
+    }
+    .success .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .success .info{
+        text-align: center;
+    }
+    .success .info h2{
+        font-size: 30px;
+        line-height: 38.4px;
+        margin: 0 0 40px 0;
+    }
+}

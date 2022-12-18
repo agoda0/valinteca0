@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valinteca</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="css/signup.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="signup">
+        <div class="image">
+            <img src="images/signup.jfif" alt="welcome">
+        </div>
+        <div class="register">
+            <h2>Create Account</h2>
+            <p>Go ahead and sign up, let everyone know how awesome you are!</p>
+            <form id="form">
+                <div>
+                    <div class="username">
+                        <i class="fa-regular fa-user"></i>
+                        <input id="username" class="form-control" type="text" placeholder="Username" title="Username must consist of 5 to 15 characters, only letters and numbers are allowed">
+                    </div>
+                    <div class=" text-danger d-none mb-3" id="usernameError" >
+                        Username must consist of 5 to 15 characters,<br>
+                        only letters and numbers are allowed,<br>
+                        with nonumbers at the beginning or the end.
+                    </div>
+                </div> 
+                <!--  -->
+                <div>
+                    <div class="email">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input id="email" class="form-control" type="email" placeholder="Email" required>
+                    </div>
+                    <div class=" text-danger d-none mb-3" id="emailError" >
+                        Email must be in a valid format
+                    </div>
+                </div>
+                <!--  -->
+                <div>
+                    <div class="pass">
+                        <i class="fa-solid fa-lock-keyhole"></i>
+                        <input id="password" class="form-control" type="password" placeholder="Password" title = "The Password must contain at least one uppercase, lowercase letter, number, symbol and minimum 8 characters." required minlength="8">
+                    
+                    </div>
+                    <div class=" text-danger d-none mb-3" id="passError" >
+                        Password must be at least 8 characters
+                    </div>
+                </div>
+                <!--  -->
+                <div>
+                    <div class="pass">
+                        <i class="fa-solid fa-lock-keyhole"></i>
+                        <input id="passwordConfirm" class="form-control" type="password" placeholder="Confirm password" title = "The Password must contain at least one uppercase, lowercase letter, number, symbol and minimum 8 characters." required minlength="8">
+                    </div>
+                    <div class=" text-danger d-none mb-3" id="passConfirmError" >
+                        Password must be at least 8 characters
+                    </div>
+                </div>
+                <button id="register" type="submit"> Create Account </button>
+            </form>
+            
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>
