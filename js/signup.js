@@ -134,6 +134,17 @@ form.addEventListener('submit' , function(e){
         alert(' Follow Instructions To Enter The Correct Data ');
     }
 })
+window.addEventListener('keyup' , function(e){
+    if(e.code == "Enter"){
+        if(usernameValidation() && emailValidation() && passwordValidation() && passwordConfirmValidation()){
+            e.preventDefault();
+            postData();
+        } else {
+            alert(' Follow Instructions To Enter The Correct Data ');
+        }
+    }
+})
+
 async function postData(){
     let user = {
         username : username.value,
